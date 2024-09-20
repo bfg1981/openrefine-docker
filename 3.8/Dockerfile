@@ -1,9 +1,8 @@
-FROM openjdk:8-jre-alpine
+FROM alpine/java:21-jre
 LABEL maintainer="felixlohmeier@opencultureconsulting.com"
-# OpenRefine 3.5.0
+# OpenRefine 3.8.2
 
-ENV OR_URL https://github.com/OpenRefine/OpenRefine/releases/download/3.5.0/openrefine-linux-3.5.0.tar.gz
-
+ENV OR_URL=https://github.com/OpenRefine/OpenRefine/releases/download/3.8.2/openrefine-linux-3.8.2.tar.gz
 WORKDIR /app
 
 RUN set -xe \
